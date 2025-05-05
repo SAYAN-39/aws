@@ -1,0 +1,71 @@
+location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                proxy_pass http://localhost:4000;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'Upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+
+
+
+#!/bin/bash
+apt-get update
+apt-get upgrade
+apt-get install -y nginx
+systemct1 start nginx
+systemct1 enable nginx
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x  | sudo -E bash -
+apt-get install -y nodejs
+git clone https://github.com/SAYAN-39/sayan_39.git
+cd sayan_39
+npm install
+node index.js
+
+
+
+
+
+Asg-8
+git init
+git remote add origin https://github.com/SAYAN-39/____.git
+git add .
+git commit -m "First commit"
+git branch -M  master
+git push -u origin master
+
+AGAIN
+
+git init
+Then run use the command git clone and paste the link copied from github.
+
+
+
+
+
+
+
+
+
+
+
+ASS-12
+
+#!/bin/bash
+apt-get update -y
+apt-get upgrade -y
+apt-get install -y nginx
+systemct1 start nginx
+systemct1 enable nginx
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x  | sudo -E bash -
+apt-get install -y nodejs
+cd/home/ubuntu
+git clone https://github.com/SAYAN-39/sayan_39.git
+cd sayan_39
+npm install
+node index.js
